@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 35.979 sec <<< FAILURE! - in TestSuite
+verifyUser(test.LoginPageTest)  Time elapsed: 11.094 sec  <<< FAILURE!
+java.lang.AssertionError: Expected: failed
+	at test.LoginPageTest.verifyUser(LoginPageTest.java:40)
+

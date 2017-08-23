@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<h4> Repro Steps </h4><br>]]>
+    </line>
+    <line>
+      <![CDATA[1. Navigate to meritnation <br> 2. Click on login link <br> 3. Fill Credentials <br>]]>
+    </line>
+    <line>
+      <![CDATA[<br><a href=C:\Users\dsood\Framework8June\Meritnation\test-output\screenshot\verifyUser22_Jun_17_11_39_45PM.png>Sreenshot</a>]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="52263" started-at="2017-06-22T18:08:54Z" finished-at="2017-06-22T18:09:46Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="52263" started-at="2017-06-22T18:08:54Z" finished-at="2017-06-22T18:09:46Z">
+      <class name="test.LoginPageTest">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:test.LoginPageTest@78c03f1f]" name="openBrowser" is-config="true" duration-ms="4414" started-at="2017-06-22T23:38:54Z" finished-at="2017-06-22T23:38:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="navigateToURL()[pri:0, instance:test.LoginPageTest@78c03f1f]" name="navigateToURL" is-config="true" duration-ms="31425" started-at="2017-06-22T23:38:58Z" finished-at="2017-06-22T23:39:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToURL -->
+        <test-method status="FAIL" signature="verifyUser(java.lang.String, java.lang.String)[pri:0, instance:test.LoginPageTest@78c03f1f]" name="verifyUser" duration-ms="14967" started-at="2017-06-22T23:39:30Z" description="1. Navigate to meritnation &lt;br&gt; 2. Click on login link &lt;br&gt; 3. Fill Credentials &lt;br&gt;" data-provider="getDataFromXls" finished-at="2017-06-22T23:39:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sunaina@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected: failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected: failed
+	at test.LoginPageTest.verifyUser(LoginPageTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<h4> Repro Steps </h4><br>]]>
+            </line>
+            <line>
+              <![CDATA[1. Navigate to meritnation <br> 2. Click on login link <br> 3. Fill Credentials <br>]]>
+            </line>
+            <line>
+              <![CDATA[<br><a href=C:\Users\dsood\Framework8June\Meritnation\test-output\screenshot\verifyUser22_Jun_17_11_39_45PM.png>Sreenshot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyUser -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.LoginPageTest@78c03f1f]" name="closeBrowser" is-config="true" duration-ms="1020" started-at="2017-06-22T23:39:45Z" finished-at="2017-06-22T23:39:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
