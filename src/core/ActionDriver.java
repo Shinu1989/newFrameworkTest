@@ -1,6 +1,7 @@
 package core;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -30,10 +31,16 @@ public class ActionDriver {
 		element.click();		
 	}
 	
+	public void clickByJS(By loc){
+		waitForElement(loc);
+		WebElement element=driver.findElement(loc);
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", element);	
+	}
+	
 	public void type(By loc, String text){
 		waitForElement(loc);
 		WebElement element=driver.findElement(loc);
-		element.clear();
 		element.sendKeys(text);
 	}
 	

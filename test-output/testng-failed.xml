@@ -5,19 +5,17 @@
     <listener class-name="listeners.ScreenshotOnFailure"/>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
   </listeners>
-  <test name="Test(failed)">
-    <parameter name="password" value="12345678"/>
+  <test thread-count="5" verbose="3" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
-    <parameter name="username" value="sunaina@test.com"/>
     <classes>
-      <class name="test.LoginPageTest">
+      <class name="test.aerocheckoutTest">
         <methods>
           <include name="closeBrowser"/>
+          <include name="verifyChecoutWithoutCouponCode"/>
           <include name="navigateToURL"/>
           <include name="openBrowser"/>
-          <include name="verifyUser" invocation-numbers="0"/>
         </methods>
-      </class> <!-- test.LoginPageTest -->
+      </class> <!-- test.aerocheckoutTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

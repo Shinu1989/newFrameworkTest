@@ -6,10 +6,8 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
   </listeners>
     <classes>
-    <parameter name="username" value="sunaina@test.com"/>
-    <parameter name="password" value="12345678"/>
     <parameter name="browser" value="chrome"/>
-      <class name="test.LoginPageTest"/>
+      <class name="test.aerocheckoutTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
